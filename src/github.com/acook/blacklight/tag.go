@@ -28,6 +28,10 @@ func (t Tag) Bytes() []byte {
 	}
 }
 
+func (t Tag) Bytecode() []byte {
+	return t.Bytes()
+}
+
 func NewTag(kind string, label string) *Tag {
 	t := new(Tag)
 	t.Kind = kind
